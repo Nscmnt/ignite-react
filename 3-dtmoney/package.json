@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.15",
+    "miragejs": "^0.1.42",
     "styled-components": "^5.3.3"
   }
 }

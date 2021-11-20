@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { createServer, Model } from "miragejs";
 
 import { App } from "./App";
+import { TransactionsProvider } from "./TransactionsContext";
 
 createServer({
   models: {
@@ -39,7 +40,9 @@ createServer({
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TransactionsProvider>
+      <App />
+    </TransactionsProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
