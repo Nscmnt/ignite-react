@@ -39,5 +39,28 @@ export const Container = styled.div`
         color: var(--red);
       }
     }
+
+    @media (max-width: 900px) {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+
+      place-items: center;
+
+      overflow-x: auto;
+
+      thead tr,
+      tbody tr {
+        display: flex;
+        flex-direction: column;
+      }
+
+      tbody {
+        display: flex;
+      }
+      tbody td {
+        min-width: max-content;
+      }
+    }
   }
 `;
