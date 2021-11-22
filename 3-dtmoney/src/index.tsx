@@ -20,6 +20,22 @@ createServer({
           amount: 5000,
           createAt: new Date("2021-10-15 14:00:00"),
         },
+        {
+          id: 2,
+          title: "Criação de app",
+          type: "deposit",
+          category: "Dev",
+          amount: 8000,
+          createAt: new Date("2021-10-18 14:00:00"),
+        },
+        {
+          id: 3,
+          title: "Compra de veiculo",
+          type: "withdraw",
+          category: "bens",
+          amount: 9000,
+          createAt: new Date("2021-10-20 15:00:00"),
+        },
       ],
     });
   },

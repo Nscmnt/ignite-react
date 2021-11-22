@@ -7,11 +7,20 @@ export const Container = styled.div`
 
   margin-top: -8rem;
 
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
   div {
     background: var(--shape);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-title);
+
+    @media (max-width: 900px) {
+      width: 90%;
+    }
 
     header {
       display: flex;
