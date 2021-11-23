@@ -58,6 +58,7 @@ export const NewTransactionModal = ({
         <h2>Cadastrar Transação</h2>
         <input
           placeholder="Titulo"
+          required
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
@@ -65,7 +66,8 @@ export const NewTransactionModal = ({
         <input
           type="number"
           placeholder="Valor"
-          value={amount}
+          required
+          value={amount || "Valor"}
           onChange={(event) => setAmount(Number(event.target.value))}
         />
 

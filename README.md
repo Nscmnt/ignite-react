@@ -22,7 +22,15 @@
 <a href="https://github.com/Nscmnt/ignite-react/tree/main/3-watch-me">Watch Me</a>
 <p align="center">Projeto que lista filmes de acordo com seu gênero.</p>
 <hr>
-<img src="https://ik.imagekit.io/Nscmnt/Projects/watch-me_aA9W9UJj6.gif?updatedAt=1636041198228">
+<img src="https://ik.imagekit.io/Nscmnt/Projects/watchme_1__RooyCV4wi.gif?updatedAt=1637677319207">
+</li>
+<hr>
+
+<li>
+<a href="https://github.com/Nscmnt/ignite-react/tree/main/4-dtmoney">Dt Money</a>
+<p align="center">App que gerencia gastos financeiros, realizando calculos sobre entradas e saídas.</p>
+<hr>
+<img src="https://ik.imagekit.io/Nscmnt/Projects/dtmoney_9x4vdnieU.gif?updatedAt=1637676982358">
 </li>
 <hr>
 
