@@ -1,4 +1,3 @@
-import { log } from "console";
 import {
   createContext,
   ReactNode,
@@ -52,12 +51,14 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
         setCart([...cart, productInsert]);
       } else {
-        const responseStock = await api.get(`stock/${productId}`);
+        const responseStock = await api.get<Stock>(`stock/${productId}`);
+        const amountStock = responseStock.data.amount;
 
-        const hasProductStock =
-          responseStock.data.amount > cart[productIndex].amount;
+        const amountCart = cart[productIndex].amount;
 
-        if (productIndex >= 0 && hasProductStock) {
+        const hasProductStock = amountStock > amountCart;
+
+        if (hasProductStock) {
           const updatedCart = cart.map((product) => {
             if (product.id === productId) {
               product.amount += 1;
@@ -77,9 +78,13 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
   const removeProduct = (productId: number) => {
     try {
-      // TODO
+      const updateProductRemoved = cart.filter(
+        (product) => product.id !== productId
+      );
+
+      setCart(updateProductRemoved);
     } catch {
-      // TODO
+      toast.error("Erro na remoção do produto");
     }
   };
 
@@ -88,9 +93,27 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     amount,
   }: UpdateProductAmount) => {
     try {
-      // TODO
+      const responseStock = await api.get(`stock/${productId}`);
+      const amountStock = responseStock.data.amount;
+
+      const amountCart = amount;
+
+      const hasProductStock = amountStock >= amountCart;
+
+      if (hasProductStock) {
+        const UpdatedCart = cart.map((product) => {
+          if (productId === product.id) {
+            return { ...product, amount: amount };
+          }
+
+          return product;
+        });
+        setCart(UpdatedCart);
+      } else {
+        toast.error("Quantidade solicitada fora de estoque");
+      }
     } catch {
-      // TODO
+      toast.error("Erro na adição do produto");
     }
   };
 
