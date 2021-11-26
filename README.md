@@ -38,7 +38,7 @@
 <a href="https://github.com/Nscmnt/ignite-react/tree/main/4-rocketshoes">Rocketshoes</a>
 <p align="center">App que simula um carrinho de compras, desafio implementando as funcionalidade com carrinho.</p>
 <hr>
-<img src="https://ik.imagekit.io/Nscmnt/Projects/CPT2111261138-1365x612_zEDNc5VHPH.gif?updatedAt=1637939116467">
+<img src="https://ik.imagekit.io/Nscmnt/Projects/rocketshoes_Jy_TyQGIDw7.gif?updatedAt=1637940087715">
 </li>
 <hr>
 
