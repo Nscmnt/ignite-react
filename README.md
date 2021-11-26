@@ -27,10 +27,18 @@
 <hr>
 
 <li>
-<a href="https://github.com/Nscmnt/ignite-react/tree/main/4-dtmoney">Dt Money</a>
+<a href="https://github.com/Nscmnt/ignite-react/tree/main/3-dtmoney">Dt Money</a>
 <p align="center">App que gerencia gastos financeiros, realizando calculos sobre entradas e saídas.</p>
 <hr>
 <img src="https://ik.imagekit.io/Nscmnt/Projects/dtmoney_a7fJvK7TS.gif?updatedAt=1637678167826">
+</li>
+<hr>
+
+<li>
+<a href="https://github.com/Nscmnt/ignite-react/tree/main/4-rocketshoes">Rocketshoes</a>
+<p align="center">App que simula um carrinho de compras, desafio implementando as funcionalidade com carrinho.</p>
+<hr>
+<img src="https://ik.imagekit.io/Nscmnt/Projects/CPT2111261138-1365x612_zEDNc5VHPH.gif?updatedAt=1637939116467">
 </li>
 <hr>
 
